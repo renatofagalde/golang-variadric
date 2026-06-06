@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"golang-variadric/internal/livro/application"
+	"golang-variadric/internal/livro/domain"
 	"golang-variadric/internal/livro/infrastructure/repository"
 	"log"
 )
@@ -33,4 +34,10 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Printf("created: %+v\n", *livroEBook)
+
+	livroEBookPDF, err := service.Cadastrar(ctx, "Go in Action", "Ketelsen", application.MarcarTipo(domain.FileTypePDF))
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("created: %+v\n", *livroEBookPDF)
 }
