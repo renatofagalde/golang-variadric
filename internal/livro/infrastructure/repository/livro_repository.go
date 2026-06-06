@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"golang-variadric/interal/livro/domain"
+	"golang-variadric/internal/livro/domain"
 	"sync"
 )
 
