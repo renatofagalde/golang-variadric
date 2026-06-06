@@ -6,7 +6,7 @@ import (
 )
 
 type LivroUsecase interface {
-	Cadastrar(ctx context.Context, titulo, autor string) (*domain.Livro, error)
+	Cadastrar(ctx context.Context, titulo, autor string, options ...Option) (*domain.Livro, error)
 	GetByID(ctx context.Context, id int64) (*domain.Livro, error)
 }
 
