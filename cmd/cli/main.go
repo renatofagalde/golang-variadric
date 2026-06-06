@@ -27,4 +27,10 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Printf("created: %+v\n", *livroCC)
+
+	livroEBook, err := service.Cadastrar(ctx, "Go in Action", "Ketelsen", application.MarcarLivroSendoDigital())
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("created: %+v\n", *livroEBook)
 }
