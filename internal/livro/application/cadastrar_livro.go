@@ -12,10 +12,15 @@ func (u *livroUseCase) Cadastrar(ctx context.Context, titulo, author string, opt
 
 	options := ResolveOptions(opts...)
 
+	if !options.FileType.IsValid() {
+		return nil, ErrInvalidInput
+	}
+
 	livro := &domain.Livro{
 		Titulo:    titulo,
 		Autor:     author,
 		IsDigital: options.IsDigital,
+		FileType:  options.FileType,
 		IsActive:  true,
 	}
 	if err := u.repository.Create(ctx, livro); err != nil {
