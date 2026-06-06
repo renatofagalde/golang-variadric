@@ -2,7 +2,7 @@ package repository
 
 import (
 	"context"
-	"golang-variadric/interal/livro/domain"
+	"golang-variadric/internal/livro/domain"
 )
 
 func (dao *livroDAO) GetByID(ctx context.Context, id int64) (*domain.Livro, error) {
