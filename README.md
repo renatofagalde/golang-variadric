@@ -5,7 +5,7 @@ Roteiro da apresentação. Três partes, cada uma na sua branch:
 
 | Parte | Branch | Assunto |
 |---|---|---|
-| 1 | feature/regular-book-code | A versão funcional, assinatura fixa |
+| 1 | main(regular-book-code) | A versão funcional, assinatura fixa |
 | 2 | feature/digital-book-support-and-types | Livro digital com functional options + enum de formato |
 | 3 | feature/race-conditions-demo | Goroutines e WaitGroup provando o mutex |
 
@@ -16,7 +16,7 @@ todo mundo que chama ela?
 
 ---
 
-# PARTE 1: a versão em produção (feature/regular-book-code)
+# PARTE 1: a versão em produção (main(regular-book-code))
 
 ## 1.1 Projeto e estrutura de pastas
 
@@ -365,7 +365,7 @@ git checkout -b feature/regular-book-code
 git checkout main
 ```
 
-Pronto. Essa é a versão "em produção". A branch feature/regular-book-code
+Pronto. Essa é a versão "em produção". A branch main(regular-book-code)
 guarda o antes da comparação.
 
 ---
@@ -901,7 +901,7 @@ camada onde a exclusão acontece.
 # Fechamento
 
 ```
-feature/regular-book-code               v1.0.0  assinatura fixa, o antes
+main(regular-book-code)               v1.0.0  assinatura fixa, o antes
 feature/digital-book-support-and-types  v1.1.0  functional options, o depois
 feature/race-conditions-demo                    mutex à prova de 50 goroutines
 ```
