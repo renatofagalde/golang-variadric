@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
-	"golang-variadric/interal/livro/application"
-	"golang-variadric/interal/livro/infrastructure/repository"
+	"golang-variadric/internal/livro/application"
+	"golang-variadric/internal/livro/infrastructure/repository"
 	"log"
 )
 
