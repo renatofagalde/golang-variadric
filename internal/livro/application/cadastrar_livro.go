@@ -2,7 +2,7 @@ package application
 
 import (
 	"context"
-	"golang-variadric/interal/livro/domain"
+	"golang-variadric/internal/livro/domain"
 )
 
 func (u *livroUseCase) Cadastrar(ctx context.Context, titulo, author string) (*domain.Livro, error) {
