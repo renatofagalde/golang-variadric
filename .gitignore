@@ -1,0 +1,98 @@
+########################################
+#             GO                      #
+########################################
+bin/
+build/
+dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+bootstrap
+lambda
+api
+
+
+# Módulos Go
+vendor/
+
+# Cobertura de testes Go
+*.cover
+*.coverprofile
+coverage.*
+coverage/
+
+# Cache Go
+/.cache/
+
+########################################
+#             JAVA                    #
+########################################
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Logs Java
+*.log
+
+# Arquivos do IntelliJ criados para projetos Java
+*.ipr
+*.iws
+
+# Arquivos do Eclipse (às vezes aparecem)
+.classpath
+.project
+.settings/
+
+# Arquivos do NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nbm/
+
+########################################
+#            IntelliJ / JetBrains      #
+########################################
+.idea/
+*.iml
+out/
+
+########################################
+#            VSCode                    #
+########################################
+.vscode/
+
+########################################
+#        Arquivos de Sistema           #
+########################################
+.DS_Store
+Thumbs.db
+
+########################################
+#           Docker / Containers        #
+########################################
+*.log
+docker-data/
+
+setup.sh
+
+./authorizer
+./lambda
+./user-authorizerbootstrap
